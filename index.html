@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Hover Preview - Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Hover Over a Thumbnail to See Preview</h1>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/300/200?random=1" alt="Sunset over mountains" onclick="upDate(this)">
+    <img src="https://picsum.photos/300/200?random=2" alt="Ocean waves" onclick="upDate(this)">
+    <img src="https://picsum.photos/300/200?random=3" alt="Forest path" onclick="upDate(this)">
+    <img src="https://picsum.photos/300/200?random=4" alt="City skyline" onclick="upDate(this)">
+    <img src="https://picsum.photos/300/200?random=5" alt="Desert dunes" onclick="upDate(this)">
+  </div>
+
+  <div id="image"></div>
+  <div id="imageText">Hover over an image below to display here.</div>
+
+  <button onclick="unDo()">Undo - Restore Original</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
